@@ -1,0 +1,44 @@
+=== 3.3.2 ===
+
+* patientform_refresh_events() Now takes two additional parameters to refine the update to a specific instance. This function
+  now optionally takes the module instance object or ID, and the course module object or ID. Please try to send the full
+  objects instead of the ids to save DB calls.
+
+=== 3.3 ===
+
+* Method get_current_completed_tmp in mod_patientform_completion class is now public.
+* Function patientform_set_tmp_values is not deprecated anymore.
+
+=== 3.1 ===
+
+* patientform_get_courses_from_sitecourse_map() now returns course id as 'id' attribute
+* Base class for patientform items - patientform_item_base - has been significantly changed, all item types now
+  must implement method complete_form_element() instead of print_item_preview(), print_item_complete(),
+  print_item_show_value(), check_values(), clean_input_value() and value_is_array(). Rendering the items
+  on complete form, patientform preview, patientform edit and when viewing response is done using moodleform.
+* The following functions have been deprecated:
+  * patientform_print_item_preview()
+  * patientform_print_item_complete()
+  * patientform_print_item_show_value
+  * patientform_check_values()
+  * patientform_clean_input_value()
+  * patientform_get_context()
+  * patientform_create_item()
+  * patientform_set_tmp_values()
+  * patientform_delete_completedtmp()
+  * patientform_get_page_to_continue()
+  * patientform_save_values()
+  * patientform_save_guest_values()
+  * patientform_create_values()
+  * patientform_update_values()
+  * patientform_get_current_completed()
+  * patientform_is_course_in_sitecourse_map()
+  * patientform_is_patientform_in_sitecourse_map()
+  * patientform_clean_up_sitecourse_map()
+  * patientform_print_numeric_option_list()
+
+=== 2.7 ===
+
+* The validation of the following events is now stricter (see MDL-45445):
+    - \mod_patientform\event\response_deleted
+    - \mod_patientform\event\response_submitted

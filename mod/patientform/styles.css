@@ -1,0 +1,118 @@
+/* styles using by patientform */
+.path-mod-patientform span.patientform_info {
+    font-weight: bold;
+}
+
+.path-mod-patientform div.patientform_is_dependent {
+    background: #ddd;
+}
+
+.path-mod-patientform span.patientform_depend {
+    color: #f00;
+}
+
+.path-mod-patientform hr.patientform_pagebreak {
+    height: 4px;
+    color: #aaa;
+    background-color: #aaa;
+    border: 0;
+    margin: 0;
+}
+
+.path-mod-patientform .drag_target_active {
+    opacity: .25;
+}
+
+.path-mod-patientform .drag_item_active {
+    opacity: .5;
+}
+
+.path-mod-patientform .patientform_bar_image {
+    height: 10px;
+}
+
+.path-mod-patientform #analysis-form label {
+    display: inline;
+}
+
+.path-mod-patientform .templateslist td.cell.action,
+.path-mod-patientform .templateslist th.header.action {
+    width: 10%;
+}
+
+/* Analysis page */
+.path-mod-patientform table.analysis {
+    width: 100%;
+    border-top: 1px solid #aaa;
+    margin-top: 10px;
+}
+
+.path-mod-patientform table.analysis tr:first-child th {
+    padding-top: 10px;
+}
+
+.path-mod-patientform table.analysis tr:hover {
+    background: #f5f5f5;
+}
+
+.path-mod-patientform table.analysis td.singlevalue:before,
+.path-mod-patientform table.analysis td.optionname:before {
+    content: '- ';
+}
+
+.path-mod-patientform table.analysis.itemtype_textarea td {
+    padding: 4px 0;
+}
+
+.path-mod-patientform table.analysis tr.isempty {
+    display: none;
+}
+
+/* Responses list */
+.path-mod-patientform #showentrytable td.cell.completed_timemodified,
+.path-mod-patientform #showentryanontable td.cell.random_response {
+    font-weight: bold;
+}
+
+.path-mod-patientform #showentrytable td.cell.userpic,
+.path-mod-patientform#showentrytable td.cell.deleteentry,
+.path-mod-patientform #showentryanontable td.cell.deleteentry {
+    width: 10px;
+}
+
+/* Responses navigation */
+.path-mod-patientform .response_navigation {
+    margin: .5em 0;
+}
+
+.path-mod-patientform .response_navigation a {
+    display: block;
+}
+
+.path-mod-patientform .response_navigation a.back_to_list {
+    text-align: center;
+}
+
+.path-mod-patientform .response_navigation .prev_response:before {
+    /*rtl:raw:
+    content: ' ► ';
+    */
+    /*rtl:remove*/
+    content: ' ◄ ';
+}
+
+.path-mod-patientform .response_navigation .next_response:after {
+    /*rtl:raw:
+    content: ' ◄ ';
+    */
+    /*rtl:remove*/
+    content: ' ► ';
+}
+
+.path-mod-patientform .response_navigation .next_response {
+    text-align: right;
+}
+
+.path-mod-patientform .response_navigation .prev_response {
+    text-align: left;
+}

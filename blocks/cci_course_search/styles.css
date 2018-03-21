@@ -1,0 +1,22 @@
+/**
+ * *************************************************************************
+ * *                       CCI - Course Search                          **
+ * *************************************************************************
+ * @package     block                                                   **
+ * @subpackage  cci coursesearch                                        **
+ * @name        CCI Course Search                                       **
+ * @copyright   CCI                                                 	**
+ * @author      CCI                                            			**
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later  **
+ * *************************************************************************
+ * ************************************************************************ */
+
+.block_cci_course_search .searchform {text-align: center;}
+.block_cci_course_search .searchform img {vertical-align: middle;}
+.block_cci_course_search .searchform img.resize {width: 1em;height: 1.1em;}
+.block_cci_course_search .invisiblefieldset {display: block;}
+
+.block_cci_course_search_result_list
+{
+    list-style-type: none;
+}
